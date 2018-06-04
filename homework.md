@@ -56,7 +56,30 @@ Daniel  Warren
 
 3.  Oops! Someone at CodeClan spelled Jesus's name wrong! Change it to reflect the proper spelling ('Jezuz Perez' should be 'Jesus Perez').
 
-UPDATE people SET (name) = ('Jesus   Perez') WHERE name = 'Jezuz   Perez';
+UPDATE people SET name = 'Jesus   Perez' WHERE name = 'Jezuz   Perez';
+
+name            
+---------------------------
+Shaun   Adams
+James   Amos
+Lee     Burgess
+Stuart  Charters
+Wil     Cornish
+Gregor  Cox
+Chris   Craig
+Gabriel González Villalba
+James   Henderson
+Edward  Kinley
+Magdalena       Kisala
+Iona    Macbeth
+Gary    Muir
+Helen   Oshea
+David   Pears
+Benjamin        Robinson
+Stephen Rooney
+Can     Toraman
+Daniel  Warren
+Jesus   Perez
 
 4.  Return ONLY your name from the 'people' table.
 
@@ -179,6 +202,53 @@ show_time
 -----------
  19:05
 
+UPDATE movies SET show_time = '21:05' WHERE id = 15;
+
+ show_time
+-----------
+23:55
+12:10
+15:45
+16:25
+16:55
+13:25
+23:15
+16:50
+20:05
+14:55
+19:05
+17:45
+16:30
+16:00
+17:25
+13:50
+14:40
+15:00
+00:00
+21:05
+
+
 ## Extension
 
 1.  Research how to delete multiple entries from your table in a single command.
+
+DELETE FROM people WHERE id BETWEEN 2 and 6;
+
+          name            
+---------------------------
+ Shaun   Adams
+ Chris   Craig
+ Gabriel González Villalba
+ James   Henderson
+ Edward  Kinley
+ Magdalena       Kisala
+ Iona    Macbeth
+ Gary    Muir
+ Helen   Oshea
+ David   Pears
+ Benjamin        Robinson
+ Stephen Rooney
+ Can     Toraman
+ Daniel  Warren
+ Jesus   Perez
+ John Harper

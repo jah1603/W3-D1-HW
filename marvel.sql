@@ -56,13 +56,13 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '15:0
 DELETE FROM people WHERE name = 'Emily Milne';
 -- DELETE FROM movies WHERE title = 'Batman Begins';
 SELECT 'James   Henderson' FROM people;
-UPDATE people SET (name) = ('Jesus   Perez') WHERE id = 17;
+UPDATE people SET name = 'Jesus   Perez' WHERE id = 17;
 INSERT INTO people (name) VALUES ('John Harper');
 INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2016, '00:00');
 SELECT show_time from movies where title = 'Guardians of the Galaxy';
-UPDATE movies SET (show_time) = ('21:05') WHERE title = 'Guardians of the Galaxy 2';
+UPDATE movies SET show_time = '21:05' WHERE id = 15;
+DELETE FROM people WHERE id BETWEEN 2 and 6;
 SELECT name FROM people;
 SELECT title FROM movies;
 SELECT year FROM movies;
 SELECT show_time FROM movies;
-SELECT * FROM movies;
